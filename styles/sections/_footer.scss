@@ -1,0 +1,78 @@
+@import"..//colors";
+
+.footer {
+    min-height: 260px;
+    background-color: $darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width:$breakpoint-down-xs){
+        min-height: 140px;
+    }
+
+    &__title {
+        margin-top: 100px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width:$breakpoint-down-xs){
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-family: 'Josefin Sans';
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.08;
+            letter-spacing: 3.36px;
+            text-align: center;
+            color: $white;
+            text-transform: uppercase;   
+        } 
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+
+        p {
+            font-family: 'Josefin Sans';
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-align: center;
+            color: $white;
+        }
+    }
+
+    &__socials {
+        width: 170px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        color: $textgray;
+
+        i {
+            cursor: pointer;
+            transition: color 0.2s ease;
+
+            &:first-child:hover {
+                color: $blue;
+            }
+
+            &:nth-child(2):hover {
+                color: $lightblue;
+            }
+
+            &:nth-child(3):hover {
+                color: $blue;
+            }
+
+            &:nth-child(4):hover {
+                color: $youtred;
+            }
+
+            &:nth-child(5):hover {
+                color: $red;
+            }
+        }   
+    }
+}
