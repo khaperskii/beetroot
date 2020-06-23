@@ -1,17 +1,14 @@
-@import "./../colors";
-@import "./../fonts";
-@import "../blocks/card";
-
 .madrid {
-    min-height: 700px;
-	background-image: url(./../assets/images/background_madrid.png);
+	background-image: url("./../assets/images/background_madrid.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     
     &__content-container {
+        min-height: 700px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
         @media screen and (max-width: $breakpoint-down-sm) {
             flex-direction: column;

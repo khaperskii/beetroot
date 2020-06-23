@@ -1,18 +1,16 @@
-@import"..//colors";
-
 .footer {
     min-height: 260px;
     background-color: $darkgray;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     @media screen and (max-width:$breakpoint-down-xs){
         min-height: 140px;
     }
 
     &__title {
-        margin-top: 100px;
         margin-bottom: 10px;
 
         @media screen and (max-width:$breakpoint-down-xs){
@@ -20,11 +18,9 @@
         }
 
         h1 {
-            font-family: 'Josefin Sans';
             font-size: 24px;
-            font-weight: bold;
-            line-height: 1.08;
-            letter-spacing: 3.36px;
+            line-height: 1.1em;
+            letter-spacing: 0.15em;
             text-align: center;
             color: $white;
             text-transform: uppercase;   
@@ -35,22 +31,22 @@
         margin-bottom: 30px;
 
         p {
-            font-family: 'Josefin Sans';
             font-size: 16px;
-            letter-spacing: 1px;
+            letter-spacing: 0.07em;
             text-align: center;
             color: $white;
         }
     }
 
     &__socials {
-        width: 170px;
-        height: 20px;
+        width: 100%;
+        height: 24px;
         display: flex;
         justify-content: space-between;
-        color: $textgray;
+        align-items: center;
 
-        i {
+        a { 
+            color: $textgray;
             cursor: pointer;
             transition: color 0.2s ease;
 

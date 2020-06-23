@@ -1,9 +1,9 @@
+@import"./reboot";
+@import"./common";
+@import"./colors";
+@import"./fonts";
+@import"./configs";
+@import"./mixins";
 
-@import "./sections/_header.scss";
-@import "./sections/_home.scss";
-@import "./sections/_choice.scss";
-@import "./sections/_places.scss";
-@import "./sections/_spain.scss";
-@import "./sections/_ourtourist.scss";
-@import "./sections/_madrid.scss";
-@import "./sections/_footer.scss";
+@import"..//styles/sections/index";
+@import"..//styles/blocks/index";

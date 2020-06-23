@@ -1,6 +1,3 @@
-@import "./../colors";
-@import "./../fonts";
-
 .button {
     max-width: 225px;
     width: 100%;
@@ -34,7 +31,7 @@
     }
 
     &:hover span {
-        transform:  scale(1.5);
+        transform:  scale(1.3);
         transition: transform 0.2s ease;
     }
 }

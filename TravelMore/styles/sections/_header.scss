@@ -1,8 +1,3 @@
-@import ".././reboot";
-@import ".././common";
-@import ".././colors";
-@import ".././configs";
-
 .header {
     height: 80px;
     background-color: $blue;
@@ -23,13 +18,13 @@
     }
 
     &__logo {
+		margin-top: 5px;
 		max-width: 170px;
 		width: 100%;
         text-transform: uppercase;
-        font-family: 'Josefin Sans';
-        font-size: 24px;
-        font-weight: bold;
-        letter-spacing: 2.4px;
+		font-size: 24px;
+		font-weight: bold;
+        letter-spacing: 0.1em;
     }
 
     &__navbar--items  {
@@ -53,77 +48,3 @@
         }
     }
 }
-
-/* hamburger button */
-
-.menu-btn {
-	background-color: transparent;
-	position: relative;
-	display: block;
-	outline: none;
-	padding: 0;
-	cursor: pointer;
-	border: 0;
-	height: 24px;
-	width: 24px;
-}
-
-.menu-btn p {
-	background-color: $white;
-	transition: 0.25s ease;
-	transform: rotate(0deg);
-	position: absolute;
-	display: block;
-	opacity: 1;
-	height: 3px;
-	width: 100%;
-}
-
-.menu-btn p:nth-of-type(1) {
-	left: 0;
-	top: 0;
-}
-
-.menu-btn p:nth-of-type(2) {
-	right: 0;
-	top: 10px;
-}
-
-.menu-btn p:nth-of-type(3) {
-	left: 0;
-	top: 20px;
-}
-
-.menu-btn:hover p {
-	background-color: $gray;
-}
-
-.menu-btn:hover p:nth-of-type(1) {
-	transform: rotate(135deg);
-	top: 10px;
-}
-
-.menu-btn:hover p:nth-of-type(2) {
-	opacity: 0;
-	right: 26px;
-}
-
-.menu-btn:hover p:nth-of-type(3) {
-	transform: rotate(-135deg);
-	top: 10px;
-}
-
-.header__menu-btn {
-	display: none;
-}
-
-@media screen and (max-width: $breakpoint-down-sm) {
-	.header__menu-btn {
-		display: block;
-	}
-
-	.navbar {
-		display: none;
-	}
-}
-

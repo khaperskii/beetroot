@@ -1,16 +1,14 @@
-@import ".././reboot";
-@import ".././common";
-
 .spain {
-    min-height: 700px;
-	background-image: url(./../assets/images/background_spain.png);
+	background-image: url("./../assets/images/background_spain.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
 
     &__content-container {
+        min-height: 700px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: flex-end;
 
         @media screen and (max-width: $breakpoint-down-sm) {
