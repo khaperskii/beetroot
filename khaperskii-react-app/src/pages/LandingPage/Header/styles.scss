@@ -1,0 +1,41 @@
+@import '..//..//..//styles/configs.scss';
+@import '..//..//..//styles/colors.scss';
+
+.header {
+    color: $white;
+    width: 100%;
+   
+    &__content {
+      height: 40px;
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Montserrat';
+      font-size: 14px;
+
+      p {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  
+    &__nav-wrapper {
+      display: flex;
+      align-items: center;
+  
+      .navbar {
+        @media screen and (max-width: $breakpoint-up-sm) {
+          display: none;
+        }
+      }
+  
+      .hamburger-btn {
+        display: none;
+  
+        @media screen and (max-width: $breakpoint-up-sm) {
+          display: block;
+        }
+      }
+    }
+  }

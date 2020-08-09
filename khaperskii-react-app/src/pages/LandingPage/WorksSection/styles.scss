@@ -1,0 +1,14 @@
+@import '..//../..//styles/colors.scss';
+@import '..//../..//styles/configs.scss';
+
+.works {
+    min-height: 1380px;
+
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 95px;
+    }
+}

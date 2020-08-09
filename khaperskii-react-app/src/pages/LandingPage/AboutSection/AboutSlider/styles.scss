@@ -1,0 +1,56 @@
+@import '..//..//..//..//styles/colors.scss';
+
+.about-slider {
+  min-height: 310px;
+  height: 100%;
+  max-width: 1140px;
+  width: 100%;
+  margin-top: 50px;
+  
+
+  &__slide {
+    outline: none;
+  }
+
+  .slick-arrow {
+    color: $grey-2;
+    background-color: $grey-3;
+    width: 30px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    
+    &:hover {
+        background-color: $red;
+        transition: 0.2s ease;
+    }
+
+    &.slick-prev {
+      left: 0;
+      z-index: 2;
+
+      &:before {
+        display: none;
+      }
+
+      .react-icon {
+        font-size: 20px;
+      }
+
+    }
+
+    &.slick-next {
+      right: 0;
+
+      &:before {
+        display: none;
+      }
+
+      .react-icon {
+        font-size: 20px;
+      }
+    }
+  }
+}

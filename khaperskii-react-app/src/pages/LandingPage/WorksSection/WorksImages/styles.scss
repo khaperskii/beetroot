@@ -1,0 +1,28 @@
+@import '..//..//..//..//styles/colors.scss';
+@import '..//..//..//..//styles/configs.scss';
+
+.worksimages {
+    max-width: 1140px;
+    width: 100%;
+    min-height: 1020px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    @media screen and (max-width: $breakpoint-up-sm) {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__item {
+        width: 360px;
+        height: 320px;
+        margin-bottom: 30px;
+ 
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

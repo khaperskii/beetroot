@@ -1,0 +1,61 @@
+@import '..//..//..//..//styles/configs.scss';
+@import '..//..//..//..//styles/colors.scss';
+
+.landing-sidebar {
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  height: 100vh;
+  background-color: rgba($color: #000, $alpha: 0.8);
+  color: $white;
+  transform: translateX(100%);
+  transition: transform $anim-time ease;
+  box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 24px;
+
+  @media screen and (max-width: $breakpoint-up-sm) {
+    display: block;
+  }
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__list {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    a{ 
+      color: $white;
+    }
+    
+  }
+
+  &__list-item {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red;
+    }
+
+    & > * {
+      &:first-child {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        margin: 0 48px;
+      }
+    }
+  }
+}
