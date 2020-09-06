@@ -2,32 +2,31 @@
 @import '..//..//..//..//styles/configs.scss';
 
 .homesectioncard {
-    max-width: 600px;
-    width: 100%;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 210px;
-    color: $white;
-    text-align: center;
-    align-self: center;
+  max-width: 600px;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 210px;
+  color: $white;
+  text-align: center;
+  align-self: center;
 
-    @media screen and (max-width: $breakpoint-up-xs) {
-        margin-top: 140px;
-    }
+  @media screen and (max-width: $breakpoint-up-xs) {
+    margin-top: 140px;
+  }
 
-    h1 {
-        font-family: 'Montserrat';
-        font-size: 48px;
-        text-transform: uppercase;
-        
-    }
+  h1 {
+    font-family: 'Montserrat';
+    font-size: 48px;
+    text-transform: uppercase;
+  }
 
-    p {
-        font-size: 20px;
-        margin-bottom: 50px;
-        font-family: 'Roboto Slab';
-    }
+  p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: 'Roboto Slab';
+  }
 }

@@ -36,7 +36,6 @@ export const Tabs = props => {
                 key={link.name}
               >
                 <p>{link.title}</p>
-
               </div>
             );
           })}

@@ -1,0 +1,13 @@
+@import '..//..//..//..//styles/colors.scss';
+@import '..//..//..//..//styles/configs.scss';
+
+.sponsor-slider {
+  min-height: 250px;
+
+  width: 100%;
+  margin: 50px;
+
+  &__slide {
+    outline: none;
+  }
+}

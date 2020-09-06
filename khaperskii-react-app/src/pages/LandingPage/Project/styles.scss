@@ -1,0 +1,35 @@
+@import '../../../styles/colors.scss';
+
+.project {
+  background-image: url(..//..//..//assets/images/project/Proj.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 370px;
+
+  &__content-container {
+    background-color: rgba($color: #c0301c, $alpha: 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 370px;
+  }
+
+  &__title {
+    max-width: 500px;
+    width: 100%;
+    min-height: 110px;
+    font-family: 'Roboto slab';
+    font-size: 30px;
+    text-align: center;
+    color: $white;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    padding: 0, 20px;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+}

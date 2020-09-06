@@ -1,12 +1,12 @@
 @import '..//..//..//..//styles/colors.scss';
+@import '..//..//..//..//styles/configs.scss';
 
 .about-slider {
   min-height: 310px;
   height: 100%;
   max-width: 1140px;
   width: 100%;
-  margin-top: 50px;
-  
+  margin: 50px 0;
 
   &__slide {
     outline: none;
@@ -21,10 +21,10 @@
     align-items: center;
     justify-content: center;
     margin-top: -30px;
-    
+
     &:hover {
-        background-color: $red;
-        transition: 0.2s ease;
+      background-color: $red;
+      transition: 0.2s ease;
     }
 
     &.slick-prev {
@@ -38,7 +38,6 @@
       .react-icon {
         font-size: 20px;
       }
-
     }
 
     &.slick-next {

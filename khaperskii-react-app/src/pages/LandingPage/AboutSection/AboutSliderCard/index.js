@@ -1,21 +1,17 @@
-import React from 'react'
+import React from 'react';
 
- import './styles.scss'
+import './styles.scss';
 
- export default function AboutSliderCard(props) {
-    return (
-        <div className='aboutslidercard'> 
-            <div className='aboutslidercard__img'>
-                 {props.image}
-            </div>
+export const AboutSliderCard = props => {
+  const { img, name, position } = props;
 
-            <div className='aboutslidercard__name'> 
-                {props.name}
-            </div>
+  return (
+    <div className="about-slider-card">
+      <img className="about-slider-card__img" src={img} alt={`${name}`} />
 
-            <div className='aboutslidercard__position'> 
-                {props.position}
-            </div>
-        </div>
-    )
- }
+      <div className="about-slider-card__name">{name}</div>
+
+      <div className="about-slider-card__position">{position}</div>
+    </div>
+  );
+};

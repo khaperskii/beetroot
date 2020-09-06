@@ -1,0 +1,67 @@
+@import '../../../styles/configs.scss';
+@import '../../../styles/colors.scss';
+
+.footer {
+  min-height: 200px;
+  background-color: $red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content-container {
+    max-width: 280px;
+    width: 100%;
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__socials {
+    width: 180px;
+    height: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &-item {
+      a {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 2px solid $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        cursor: pointer;
+
+        &:hover {
+          color: $grey-3;
+          border: 2px solid $grey-3;
+          transition: 0.2s ease;
+        }
+      }
+    }
+  }
+
+  &__line {
+    width: 50px;
+    height: 2px;
+    background-color: $white;
+    margin-bottom: 30px;
+  }
+
+  &__rights {
+    width: 280px;
+    height: 20px;
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+  }
+}

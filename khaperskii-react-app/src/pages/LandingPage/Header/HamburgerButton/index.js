@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import classNames from 'classnames'
+import classNames from 'classnames';
 
-import './styles.scss'
+import './styles.scss';
 
 export const HamburgerButton = props => {
   const { handleClick, isOpen, mirror } = props;

@@ -1,16 +1,14 @@
 @import '..//..//..//styles/colors.scss';
 
 .about {
-    min-height: 850px;
-    background-color: $grey-1;
-    
+  min-height: 850px;
+  background-color: $grey-1;
 
-    &__section-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 95px;
-    }
-
+  &__section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 95px;
+  }
 }

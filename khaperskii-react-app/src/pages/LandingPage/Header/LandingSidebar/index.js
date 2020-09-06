@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import classNames from 'classnames'
+import classNames from 'classnames';
 
-import ReactIcon from '../../../../components/ReactIcon'
+import ReactIcon from '../../../../components/ReactIcon';
 
-import './styles.scss'
+import './styles.scss';
 
 export const LandingSidebar = props => {
   const { isOpen, list } = props;
@@ -24,7 +24,9 @@ export const LandingSidebar = props => {
                 {item.name}
               </a>
 
-              <ReactIcon size="lg">{item.icon()}</ReactIcon>
+              <ReactIcon size="lg" color="red">
+                {item.icon()}
+              </ReactIcon>
             </div>
           );
         })}

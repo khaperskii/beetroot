@@ -1,0 +1,14 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/configs.scss';
+
+.sponsors {
+  background-color: $grey-1;
+
+  &__content-container {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

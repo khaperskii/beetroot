@@ -1,23 +1,22 @@
 @import '..//..//..//styles/colors.scss';
 
 .navbar {
-    display: flex;
-    align-items: center;
-  
-    &__item {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    color: $white;
+    margin-right: 32px;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 2px solid $white;
       color: $white;
-      margin-right: 32px;
-     
-    }
-
-    a {
-      text-decoration: none;
-
-      &:hover {
-        color: $white;
-        text-shadow: rgb(255, 255, 255) 0px 0px 20px;
-        transition: 0.2s ease;
-      }
+      padding-top: 2px;
+      transition: 0.1s ease;
     }
   }
-  
+}

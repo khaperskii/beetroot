@@ -1,0 +1,120 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/configs.scss';
+
+.blogs-card {
+  max-width: 1140px;
+  width: 100%;
+  min-height: 320px;
+  margin-top: 80px;
+  color: $grey-3;
+  display: flex;
+
+  @media screen and (max-width: $breakpoint-up-md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__img--wrapper {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 460px;
+    width: 100%;
+    min-height: 320px;
+    margin-right: 40px;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    img {
+      max-width: 460px;
+      width: 100%;
+      min-height: 320px;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__info {
+    max-width: 640px;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      max-width: 460px;
+      min-height: 280px;
+      text-align: justify;
+    }
+
+    &-header {
+      max-width: 440px;
+      width: 100%;
+      min-height: 76px;
+      margin-bottom: 20px;
+      display: flex;
+
+      &--date {
+        max-width: 76px;
+        width: 100%;
+        min-height: 76px;
+        margin-right: 24px;
+        border: 2px solid $grey-3;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1em;
+        padding-top: 14px;
+      }
+
+      &-block {
+        max-width: 340px;
+        width: 100%;
+        min-height: 76px;
+
+        &--title {
+          font-family: 'Montserrat';
+          font-size: 16px;
+          text-transform: uppercase;
+          padding: 10px 0;
+        }
+
+        &--subtitle {
+          font-family: 'Roboto Slab';
+          font-size: 13px;
+        }
+      }
+    }
+
+    &-news {
+      max-width: 640px;
+      width: 100%;
+      min-height: 130px;
+      margin-bottom: 12px;
+      font-family: 'Roboto Slab';
+      font-size: 14px;
+    }
+    p {
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        color: $red;
+        transition: 0.2s ease;
+      }
+
+      @media screen and (max-width: $breakpoint-up-xs) {
+        text-align: center;
+      }
+    }
+  }
+}

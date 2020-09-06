@@ -1,18 +1,17 @@
 .home {
-    background-image: url(..//..//..//assets/images/Clip.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    min-height: 100vh;
+  background-image: url(..//..//..//assets/images/Clip.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 100vh;
+  scroll-behavior: smooth;
 
-
-    &__content-container {
-        background-color: rgba($color: #000000, $alpha: 0.5);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        min-height: inherit;
-        
-    }
+  &__content-container {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: inherit;
+  }
 }

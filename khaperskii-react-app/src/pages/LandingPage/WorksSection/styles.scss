@@ -2,13 +2,17 @@
 @import '..//../..//styles/configs.scss';
 
 .works {
-    min-height: 1380px;
+  min-height: 1380px;
 
-    &__content-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 95px;
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 95px;
+
+    @media screen and (max-width: $breakpoint-up-xs) {
+      align-items: stretch;
     }
+  }
 }

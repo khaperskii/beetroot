@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import './styles.scss'
+import './styles.scss';
 
 export const Navbar = props => {
   const { list } = props;

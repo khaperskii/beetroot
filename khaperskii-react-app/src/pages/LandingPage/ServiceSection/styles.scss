@@ -1,11 +1,11 @@
 .service {
-    min-height: 580px;
+  min-height: 580px;
 
-    &__section-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 95px;
-    }
+  &__section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 95px;
+  }
 }

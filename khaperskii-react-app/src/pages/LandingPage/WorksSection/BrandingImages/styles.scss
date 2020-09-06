@@ -1,0 +1,29 @@
+@import '..//..//..//..//styles/colors.scss';
+@import '..//..//..//..//styles/configs.scss';
+
+.branding-images {
+  min-height: 1020x;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+  margin-bottom: 90px;
+
+  @media screen and (max-width: $breakpoint-up-md) {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+
+  @media screen and (max-width: $breakpoint-up-sm) {
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 3vw;
+  }
+
+  &__item {
+    max-width: 360px;
+    width: 100%;
+    height: 320px;
+  }
+}
