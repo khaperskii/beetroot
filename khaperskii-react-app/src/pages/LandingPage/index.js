@@ -10,11 +10,9 @@ import SponsorSection from './SponsorSection';
 import Footer from './Footer';
 import HomeButtonLink from '../../components/HomeButtonLink';
 
-import './styles.scss';
-
 export default function LandingPage() {
   return (
-    <div className="landing-page">
+    <div>
       <HomeButtonLink />
       <HomeSection />
       <ServiceSection />

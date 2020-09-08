@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-scroll';
+
 import './styles.scss';
 
 export const Navbar = props => {
@@ -9,9 +11,15 @@ export const Navbar = props => {
     <nav className="navbar">
       {list.map((item, index) => {
         return (
-          <a key={index} href={`#${item.to}`} className="navbar__item">
+          <Link
+            key={index}
+            to={`${item.to}`}
+            className="navbar__item"
+            smooth={true}
+            duration={1000}
+          >
             {item.name}
-          </a>
+          </Link>
         );
       })}
     </nav>

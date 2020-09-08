@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './styles.scss';
-
 import { sponsorList } from '../../../../../constants/landingPage';
+
+import './styles.scss';
 
 export default function SponsorSliderCard(props) {
   return (

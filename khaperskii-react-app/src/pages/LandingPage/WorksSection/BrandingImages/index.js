@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './styles.scss';
 import { brandingCardList } from '../../../../constants/landingPage';
+
+import './styles.scss';
 
 export const BrandingImages = props => {
   const { img } = props;
-
   return (
     <div className="branding-images">
       {brandingCardList.map(({ img }) => {

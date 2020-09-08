@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './styles.scss';
-
 import { Header } from '..//Header';
 import HomeSectionCard from './HomeSectionCard';
+
+import './styles.scss';
 
 export default function HomeSection() {
   return (

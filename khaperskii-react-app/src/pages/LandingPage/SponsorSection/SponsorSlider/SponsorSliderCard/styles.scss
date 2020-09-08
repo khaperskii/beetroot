@@ -39,6 +39,7 @@
 
     @media screen and (max-width: $breakpoint-up-sm) {
       grid-gap: 24px;
+      justify-items: center;
 
       grid-template-areas:
         'child-one'

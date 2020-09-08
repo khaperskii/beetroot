@@ -7,16 +7,9 @@
   &__item {
     color: $white;
     margin-right: 32px;
-  }
-
-  a {
-    text-decoration: none;
 
     &:hover {
-      border-bottom: 2px solid $white;
-      color: $white;
-      padding-top: 2px;
-      transition: 0.1s ease;
+      border-bottom: 1px solid white;
     }
   }
 }

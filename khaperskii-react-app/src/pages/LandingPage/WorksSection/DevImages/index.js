@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './styles.scss';
 import { devCardList } from '../../../../constants/landingPage';
+
+import './styles.scss';
 
 export const DevImages = props => {
   const { img } = props;
-
   return (
     <div className="dev-images">
       {devCardList.map(({ img }) => {

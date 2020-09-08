@@ -7,7 +7,7 @@ import './styles.scss';
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contacts">
       <ContentWidtLimiter>
         <div className="footer__content-container">
           <div className="footer__socials">
