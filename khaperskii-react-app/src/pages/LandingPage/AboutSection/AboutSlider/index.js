@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import { AboutSliderCard } from '..//AboutSliderCard';
-import ReactIcon from '..//..//..//..//components/ReactIcon';
+import { AboutSliderCard } from '../AboutSliderCard';
+import ReactIcon from '../../../../components/ReactIcon';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { sliderCardList } from '../../../../constants/landingPage';
 
@@ -41,10 +41,10 @@ export class AboutSlider extends React.Component {
       speed: 800,
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3000,
       centerMode: true,
-      centerPadding: '-18px',
+      centerPadding: '0',
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       responsive: [
@@ -52,36 +52,19 @@ export class AboutSlider extends React.Component {
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            infinite: true,
-            centerMode: true,
-            centerPadding: '40px',
           },
         },
-        {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 2,
-            infinite: true,
-            centerMode: true,
-            centerPadding: '60px',
-          },
-        },
+
         {
           breakpoint: 675,
           settings: {
             slidesToShow: 2,
-            infinite: true,
-            centerMode: true,
-            centerPadding: '10px',
           },
         },
         {
           breakpoint: 525,
           settings: {
             slidesToShow: 1,
-            infinite: true,
-            centerMode: true,
-            centerPadding: '35px',
           },
         },
       ],

@@ -1,3 +1,5 @@
+@import '../../../styles/configs.scss';
+
 .service {
   min-height: 580px;
 
@@ -6,6 +8,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 95px;
+    padding: 90px 0;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      padding: 30px 0;
+    }
   }
 }

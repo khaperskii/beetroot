@@ -1,5 +1,5 @@
-@import '..//..//..//..//styles/colors.scss';
-@import '..//..//..//..//styles/configs.scss';
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/configs.scss';
 
 .homesectioncard {
   max-width: 600px;
@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 210px;
+  margin-top: 220px;
   color: $white;
   text-align: center;
   align-self: center;
@@ -19,7 +19,6 @@
   }
 
   h1 {
-    font-family: 'Montserrat';
     font-size: 48px;
     text-transform: uppercase;
   }

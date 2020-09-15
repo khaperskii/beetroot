@@ -1,22 +1,22 @@
-@import '..//..//..//..//styles/configs.scss';
-@import '..//..//..//..//styles/colors.scss';
+@import '../../../../styles/configs.scss';
+@import '../../../../styles/colors.scss';
 
 .landing-sidebar {
   width: 300px;
   display: none;
   position: fixed;
   top: 0px;
-  right: 0;
-  height: 450px;
-  background-color: $black;
+  left: 0;
+  height: 100vh;
+  background-color: $grey-3;
   color: $white;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: transform $anim-time ease;
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 24px;
   z-index: 900;
 
-  @media screen and (max-width: $breakpoint-up-sm) {
+  @media screen and (max-width: $breakpoint-up-md) {
     display: block;
   }
 

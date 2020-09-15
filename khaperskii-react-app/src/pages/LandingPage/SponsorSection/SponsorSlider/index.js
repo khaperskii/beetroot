@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import ReactIcon from '..//..//..//..//components/ReactIcon';
+import ReactIcon from '../../../../components/ReactIcon';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import SponsorSliderCard from './SponsorSliderCard';
 

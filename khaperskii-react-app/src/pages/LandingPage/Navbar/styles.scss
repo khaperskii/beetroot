@@ -1,4 +1,4 @@
-@import '..//..//..//styles/colors.scss';
+@import '../../../styles/colors.scss';
 
 .navbar {
   display: flex;
@@ -7,6 +7,9 @@
   &__item {
     color: $white;
     margin-right: 32px;
+    &:last-child {
+      margin-right: 0;
+    }
 
     &:hover {
       border-bottom: 1px solid white;

@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="footer__line"> </div>
           <div className="footer__rights">
             {' '}
-            &#169; 2015 startup, designed by shapedtheme{' '}
+            &#169; 2020 startup, designed by shapedtheme{' '}
           </div>
         </div>
       </ContentWidtLimiter>

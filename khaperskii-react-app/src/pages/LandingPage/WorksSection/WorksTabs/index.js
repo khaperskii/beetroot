@@ -6,7 +6,7 @@ import { DesignImages } from '../DesignImages';
 import { DevImages } from '../DevImages';
 import { StrategyImages } from '../StrategyImages';
 
-export const TabsPage = () => {
+export const WorksTabs = () => {
   const tabsLinks = [
     { name: 'Branding', title: 'Branding' },
     { name: 'Design', title: 'Design' },

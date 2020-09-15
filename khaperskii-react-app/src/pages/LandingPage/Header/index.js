@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import ContentWidthLimiter from '..//..//..//components/ContentWidthLimiter';
+import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
 import { HamburgerButton } from './HamburgerButton';
 import { LandingSidebar } from './LandingSidebar';
-import { Navbar } from '..//Navbar';
+import { Navbar } from '../Navbar';
 
 import { navbarList, sidebarList } from '../../../constants/landingPage';
 

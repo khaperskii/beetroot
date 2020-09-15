@@ -1,5 +1,5 @@
-@import '..//..//..//..//styles/colors.scss';
-@import '..//..//..//..//styles/configs.scss';
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/configs.scss';
 
 .strategy-images {
   min-height: 1020x;
@@ -7,7 +7,6 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1vw;
-  margin-bottom: 90px;
 
   @media screen and (max-width: $breakpoint-up-md) {
     grid-template-rows: repeat(5, 1fr);

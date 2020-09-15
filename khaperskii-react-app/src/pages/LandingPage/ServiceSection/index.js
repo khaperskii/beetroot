@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Title from '..//Title';
+import Title from '../Title';
 import ServiceBlock from './ServiceBlock';
-import ContentWidthLimiter from '..//..//..//components/ContentWidthLimiter';
+import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
 
 import './styles.scss';
 

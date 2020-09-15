@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ReactIcon from '..//..//..//..//components/ReactIcon';
+import ReactIcon from '../../../../components/ReactIcon';
 
 import { FaAmilia } from 'react-icons/fa';
 import { RiCodeSSlashLine } from 'react-icons/ri';

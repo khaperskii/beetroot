@@ -1,7 +1,7 @@
-@import '..//..//..//styles/colors.scss';
+@import '../../../styles/colors.scss';
 
 .title-block {
-  max-width: 500px;
+  max-width: 800px;
   width: 100%;
   min-height: 100px;
   color: $grey-3;
@@ -13,8 +13,7 @@
 
   &__title {
     text-transform: uppercase;
-    font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 
@@ -28,6 +27,6 @@
 
   &__subtitle {
     font-family: 'Roboto Slab';
-    font-size: 16px;
+    font-size: 24px;
   }
 }

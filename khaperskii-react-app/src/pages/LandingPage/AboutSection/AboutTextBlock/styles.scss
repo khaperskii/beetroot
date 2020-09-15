@@ -1,5 +1,5 @@
-@import '..//..//..//..//styles/colors.scss';
-@import '..//..//..//..//styles/configs.scss';
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/configs.scss';
 
 .about-text-block {
   max-width: 1140px;
@@ -23,7 +23,6 @@
     text-align: justify;
     color: $grey-3;
     font-family: 'Roboto Slab';
-    font-size: 14px;
 
     @media screen and (max-width: $breakpoint-up-sm) {
       margin-right: 0;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import ContentWidthLimiter from '..//..//..//components/ContentWidthLimiter';
-import Title from '..//Title';
-import { TabsPage } from './TabsPage';
+import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
+import Title from '../Title';
+import { WorksTabs } from './WorksTabs';
 
 import './styles.scss';
 
@@ -15,7 +15,7 @@ export default function WorksSection() {
             title="Latest Works"
             subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet"
           />
-          <TabsPage />
+          <WorksTabs />
         </div>
       </ContentWidthLimiter>
     </section>
