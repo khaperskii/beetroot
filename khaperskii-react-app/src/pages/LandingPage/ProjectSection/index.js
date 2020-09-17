@@ -5,7 +5,7 @@ import Button from '../../../components/Button';
 
 import './styles.scss';
 
-export default function Project() {
+export default function ProjectSection() {
   return (
     <section className="project">
       <div className="project__content-container">

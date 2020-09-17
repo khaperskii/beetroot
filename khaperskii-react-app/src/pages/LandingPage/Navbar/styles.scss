@@ -7,6 +7,9 @@
   &__item {
     color: $white;
     margin-right: 32px;
+    border-bottom: 1px transparent solid;
+    padding-bottom: 2px;
+    transition: 0.3s ease border-bottom, 0.3s ease color;
     &:last-child {
       margin-right: 0;
     }

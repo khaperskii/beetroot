@@ -41,7 +41,7 @@ export class AboutSlider extends React.Component {
       speed: 800,
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 3000,
       centerMode: true,
       centerPadding: '0',

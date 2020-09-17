@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
 import { HamburgerButton } from './HamburgerButton';
-import { LandingSidebar } from './LandingSidebar';
+import Sidebar from './Sidebar';
 import { Navbar } from '../Navbar';
 
 import { navbarList, sidebarList } from '../../../constants/landingPage';
@@ -36,7 +36,11 @@ export const Header = () => {
         </ContentWidthLimiter>
       </header>
 
-      <LandingSidebar isOpen={isSidebarShow} list={sidebarList} />
+      <Sidebar
+        isOpen={isSidebarShow}
+        list={sidebarList}
+        handleClick={toggleHandler}
+      />
     </>
   );
 };
