@@ -1,0 +1,25 @@
+@import "../../../styles/colors.scss";
+
+.navbar {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+  align-items: center;
+  height: 15px;
+
+  &__item {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $black;
+
+    &:hover {
+      color: $brown;
+      transition: color 0.2s ease;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

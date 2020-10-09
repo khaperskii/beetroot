@@ -1,0 +1,63 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/configs.scss";
+
+.home {
+  &__content-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 700px;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+
+    &-overlay {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      @media screen and (max-width: $breakpoint-up-sm) {
+        align-items: center;
+        width: 100%;
+      }
+
+      &-title {
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: 0.15em;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 20px;
+      }
+
+      &-sub {
+        max-width: 400px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        line-height: 24px;
+        color: $white;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__overlay-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 90px 0 16px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      padding: 16px;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

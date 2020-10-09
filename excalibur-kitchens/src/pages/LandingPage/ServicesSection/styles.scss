@@ -1,0 +1,119 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/configs.scss";
+
+.services {
+  &__content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+      width: 100%;
+
+      padding-left: 40px;
+      padding-right: 16px;
+
+      @media screen and (max-width: $breakpoint-up-md) {
+        padding: 30px 16px;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+      }
+
+      &-block {
+        display: flex;
+        flex-direction: column;
+        max-width: 510px;
+        width: 100%;
+        min-height: 680px;
+
+        @media screen and (max-width: $breakpoint-up-md) {
+          min-width: 100%;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+
+      &-text {
+        letter-spacing: 0.15em;
+        padding: 50px 0;
+
+        @media screen and (max-width: $breakpoint-up-xs) {
+          padding: 20px 0;
+        }
+      }
+    }
+
+    &--list {
+      max-width: 50%;
+      width: 100%;
+      min-height: 900px;
+      background: url(../../../assets/images/services/kitchen.png);
+      background-position: right;
+      position: relative;
+
+      @media screen and (max-width: $breakpoint-up-md) {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      @media screen and (max-width: $breakpoint-up-xs) {
+        padding: 20px 10px;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(10, 1fr);
+        grid-gap: 1vw;
+      }
+
+      &-overlay {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2vw;
+        padding: 100px 10px;
+
+        @media screen and (max-width: $breakpoint-up-xs) {
+          padding: 20px 10px;
+          grid-template-columns: 80%;
+          grid-template-rows: repeat(10, 1fr);
+          grid-gap: 1vw;
+        }
+      }
+
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $brown;
+        background: rgba($color: #000000, $alpha: 0.3);
+        text-align: center;
+        padding: 5px;
+
+        &-text {
+          font-size: 18px;
+          font-weight: 700;
+          color: $white;
+          line-height: 1.5em;
+          letter-spacing: 0.15em;
+        }
+      }
+    }
+  }
+}

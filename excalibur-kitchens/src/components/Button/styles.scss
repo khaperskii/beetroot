@@ -1,0 +1,24 @@
+@import "../../styles/colors.scss";
+
+.button {
+  max-width: 330px;
+  width: 100%;
+  min-height: 55px;
+  background-color: $brown;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+
+  &--small {
+    max-width: 230px;
+  }
+
+  &:hover {
+    background-color: inherit;
+    color: $brown;
+    border: 2px solid $brown;
+    transition: color 0.2s ease, background-color 0.2s ease;
+  }
+}

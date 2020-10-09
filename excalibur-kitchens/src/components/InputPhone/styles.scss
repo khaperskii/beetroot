@@ -1,0 +1,30 @@
+@import "../../styles/colors";
+
+.input-phone {
+  .react-tel-input {
+    font-size: 0.9rem;
+
+    .form-control {
+      color: $black;
+      cursor: pointer;
+      padding: 12px 24px 10px 24px;
+      transition: border-color 0.3s ease;
+      border: 1px solid $brown;
+      height: 48px;
+      width: 230px;
+      border-radius: 0;
+
+      &:hover {
+        border-color: $grey;
+      }
+    }
+
+    .flag-dropdown {
+      display: none;
+    }
+  }
+
+  &:focus {
+    border-color: $brown;
+  }
+}

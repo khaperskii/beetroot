@@ -35,11 +35,13 @@ const SamplePrevArrow = props => {
 export class AboutSlider extends React.Component {
   render() {
     const settings = {
-      dots: false,
-      arrows: true,
+      dots: true,
+      // vertical: true,
+      arrows: false,
+      // appendDots: ,
       infinite: true,
       speed: 800,
-      slidesToShow: 4,
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
